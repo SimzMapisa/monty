@@ -11,14 +11,14 @@ void usage_err(void)
 }
 
 /**
- * exec - Executes the opcode commands
+ * op_exec - Executes the opcode commands
  * @stack: Pointer to top of stack
  * @lineNum: Line counter
  * @file: Monty file pointer
  * @input: opcode input
  * Return: Void
  */
-int exec(char *input, stack_t **stack, unsigned int lineNum, FILE *file)
+int op_exec(char *input, stack_t **stack, unsigned int lineNum, FILE *file)
 {
 	unsigned int i;
 	char *current_opcode;
@@ -58,7 +58,10 @@ int exec(char *input, stack_t **stack, unsigned int lineNum, FILE *file)
 }
 
 /**
- * exit_failure - Handles cleanup and exits on failure
+ * exit_error - Handles cleanup and exits on failure
+ * @stack: Pointer to the top of the stack
+ * @file: Monty file pointer
+ * @input: opcode input
  */
 void exit_error(stack_t **stack, FILE *file, char *input)
 {

@@ -3,7 +3,7 @@
 /**
  * push - Inserts an element onto a stack
  * @stack: Stack pointer
- * @n: The data or integer value to push onto the stack
+ * @line_number: unsigned int representing line number
  */
 void push(stack_t **stack, unsigned int line_number)
 {
@@ -74,9 +74,9 @@ void swap(stack_t **top, unsigned int line_number)
 }
 
 /**
- * pint - Prints element on top in the stack
+ * print - Prints element on top in the stack
  * @stack: Pointer to the stack
- * @line_number: Line number
+ * @line_number: unsigned int representing line number
  */
 void print(stack_t **stack, unsigned int line_number)
 {
@@ -94,7 +94,7 @@ void print(stack_t **stack, unsigned int line_number)
 /**
  * pop - Removes top element in a stack
  * @stack: Pointer to the stack
- *@ line_number: unsigned int representing the line number
+ * @line_number: unsigned int representing the line number
  */
 
 void pop(stack_t **stack, unsigned int line_number)

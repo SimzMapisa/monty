@@ -1,6 +1,6 @@
 #include "monty.h"
 
-cmdContext global_context;
+/* cmdContext global_context; */
 
 /**
  * open_monty_file - Function to open monty file
@@ -55,7 +55,7 @@ int main(int argc, char *argv[])
 		counter++;
 		if (get_input > 0)
 		{
-			exec(input, &stack, counter, monty_file);
+			op_exec(input, &stack, counter, monty_file);
 		}
 		free(input);
 	}

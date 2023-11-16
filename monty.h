@@ -10,8 +10,6 @@
 #include <stdarg.h>
 #define OP_DELIM " \n\t"
 
-
-
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
@@ -61,7 +59,7 @@ typedef struct cmdContext
 
 extern cmdContext global_context;
 
-int opcod_exec(char *input, stack_t **stack, unsigned int lineNum, FILE *file);
+int op_exec(char *input, stack_t **stack, unsigned int lineNum, FILE *file);
 void swap(stack_t **stack, unsigned int line_number);
 void pop(stack_t **, unsigned int line_number);
 void print(stack_t **stack, unsigned int line_number);
@@ -69,7 +67,6 @@ void push(stack_t **stack, unsigned int line_number);
 void pall(stack_t **stack, unsigned int line_number);
 void no_operation(stack_t **top, unsigned int line_number);
 void free_mem(stack_t *top);
-int interpret_monty(int argc, char *argv[]);
 void exit_error();
 FILE *open_monty_file(const char *filename);
 void usage_err();

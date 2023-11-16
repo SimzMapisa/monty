@@ -1,6 +1,6 @@
 #include "monty.h"
 
-/* cmdContext global_context; */
+cmdContext global_context = {NULL, NULL, NULL, 0};
 
 /**
  * open_monty_file - Function to open monty file

@@ -80,14 +80,14 @@ void swap(stack_t **top, unsigned int line_number)
  */
 void print(stack_t **stack, unsigned int line_number)
 {
-        if (*stack == NULL)
-        {
-                freopen(NULL, "w", stdout);
-                fprintf(stderr, "L%u: can't pint, stack empty\n", line_number);
-                exit(EXIT_FAILURE);
-        }
+	if (*stack == NULL)
+	{
+		freopen(NULL, "w", stdout);
+		fprintf(stderr, "L%u: can't pint, stack empty\n", line_number);
+		exit(EXIT_FAILURE);
+	}
 
-        printf("%d\n", (*stack)->n);
+	printf("%d\n", (*stack)->n);
 }
 
 

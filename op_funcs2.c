@@ -35,7 +35,7 @@ void pchar_op(stack_t **top, unsigned int line_number)
  */
 void no_operation(stack_t **top, unsigned int line_number)
 {
-        (void) top; /*Parameter not used*/
-        (void) line_number; /*Parameter not used*/
+	(void) top; /*Parameter not used*/
+	(void) line_number; /*Parameter not used*/
 }
 
